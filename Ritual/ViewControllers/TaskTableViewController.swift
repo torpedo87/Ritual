@@ -64,7 +64,6 @@ extension TaskTableViewController {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? TaskTableViewCell else {
       fatalError("The dequeued cell is not an instance of TaskTableViewCell")
     }
-    
     cell.taskLabel.text = tasks[indexPath.row]?.description
     return cell
   }
